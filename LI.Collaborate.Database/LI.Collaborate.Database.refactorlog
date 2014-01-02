@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="84b44f46-2d51-4726-a725-c91abf2c56d5" ChangeDateTime="12/31/2013 17:20:03">
+    <Property Name="ElementName" Value="[dbo].[Table1].[CreatedBy]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Table1]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CreatorId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3df6d345-7f2c-4a15-b28d-1ebac1387aaa" ChangeDateTime="12/31/2013 17:28:20">
+    <Property Name="ElementName" Value="[dbo].[Link].[EventId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Link]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EventId1" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2ea533fa-9fe5-4833-b96d-dec3f815b246" ChangeDateTime="12/31/2013 17:28:40">
+    <Property Name="ElementName" Value="[dbo].[Link].[EventId2]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Link]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EventName1" />
+  </Operation>
+</Operations>
