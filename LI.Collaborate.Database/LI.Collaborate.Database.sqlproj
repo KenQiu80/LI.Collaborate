@@ -62,9 +62,9 @@
   <ItemGroup>
     <Build Include="Tables\Attachment.sql" />
     <Build Include="Tables\Bonus.sql" />
-    <Build Include="Tables\Event.sql" />
     <Build Include="Tables\EventLink.sql" />
     <Build Include="Tables\R_TeamMember.sql" />
+    <Build Include="Tables\Event.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LI.Collaborate.Database.refactorlog" />
