@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bonus.cs" />
     <Compile Include="Enum\EventRelationType.cs" />
     <Compile Include="Enum\TeamMemberRole.cs" />
     <Compile Include="Event.cs" />
