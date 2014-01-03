@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[Attachment]
 (
 	[Id] VARCHAR(36) NOT NULL PRIMARY KEY, 
-    [EventId] VARCHAR(36) NULL, 
-    [MD5] VARCHAR(MAX) NULL, 
-    [Filename] NVARCHAR(MAX) NULL,
+    [EventId] VARCHAR(36) NOT NULL, 
+    [MD5] VARCHAR(MAX) NOT NULL, 
+    [Filename] NVARCHAR(MAX) NOT NULL,
     [CreatorId] VARCHAR(36) NOT NULL, 
     [CreatorName] NVARCHAR(MAX) NOT NULL, 
     [CreatedTime] DATETIME NOT NULL, 

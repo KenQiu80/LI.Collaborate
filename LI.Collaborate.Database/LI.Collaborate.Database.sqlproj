@@ -57,11 +57,14 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Event.sql" />
-    <Build Include="Attachment.sql" />
-    <Build Include="Link.sql" />
+    <Build Include="Tables\Attachment.sql" />
+    <Build Include="Tables\Bonus.sql" />
+    <Build Include="Tables\Event.sql" />
+    <Build Include="Tables\EventLink.sql" />
+    <Build Include="Tables\R_TeamMember.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LI.Collaborate.Database.refactorlog" />
