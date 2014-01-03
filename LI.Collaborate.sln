@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LI.Collaborate.Services", "
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LI.Collaborate.Database", "LI.Collaborate.Database\LI.Collaborate.Database.sqlproj", "{FB15D691-42C6-4D02-A9BC-05488FAFF48B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LI.Collaborate.Data.NH", "LI.Collaborate.Data.NH\LI.Collaborate.Data.NH.csproj", "{02B1AA49-AE55-4F6B-B806-1048ADF12B6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LI.Collaborate.Data.NH.Impl", "LI.Collaborate.Data.NH.Impl\LI.Collaborate.Data.NH.Impl.csproj", "{0EB2C808-3C9B-4FA3-9997-4319E79D3680}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,14 @@ Global
 		{FB15D691-42C6-4D02-A9BC-05488FAFF48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB15D691-42C6-4D02-A9BC-05488FAFF48B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FB15D691-42C6-4D02-A9BC-05488FAFF48B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{02B1AA49-AE55-4F6B-B806-1048ADF12B6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B1AA49-AE55-4F6B-B806-1048ADF12B6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B1AA49-AE55-4F6B-B806-1048ADF12B6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B1AA49-AE55-4F6B-B806-1048ADF12B6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EB2C808-3C9B-4FA3-9997-4319E79D3680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB2C808-3C9B-4FA3-9997-4319E79D3680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB2C808-3C9B-4FA3-9997-4319E79D3680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB2C808-3C9B-4FA3-9997-4319E79D3680}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
