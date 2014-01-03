@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0EB2C808-3C9B-4FA3-9997-4319E79D3680}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LI.Collaborate.Data.NH.Impl</RootNamespace>
+    <AssemblyName>LI.Collaborate.Data.NH.Impl</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentNHibernate, Version=1.4.0.0, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CriteriaQueryBase.cs" />
+    <Compile Include="HQLQueryBase.cs" />
+    <Compile Include="HttpModule\SessionPerRequestModule.cs" />
+    <Compile Include="NamedQueryBase.cs" />
+    <Compile Include="NHibernateQueryBase.cs" />
+    <Compile Include="NHibernateRepository.cs" />
+    <Compile Include="PaginationQueryBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionFactoryProvider\Provider.cs" />
+    <Compile Include="SessionFactoryProvider\ProviderInitializer.cs" />
+    <Compile Include="SessionFactoryProvider\SqlServerProvider.cs" />
+    <Compile Include="SQLQueryBase.cs" />
+    <Compile Include="Utils\CurrentSessionContext.cs" />
+    <Compile Include="Utils\TransactionWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\log4net.dll" />
+    <Content Include="bin\Debug\log4net.xml" />
+    <Content Include="bin\Staging\Remotion.Data.Linq.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="bin\Testing\" />
+    <Folder Include="Query\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LI.Collaborate.Data.NH\LI.Collaborate.Data.NH.csproj">
+      <Project>{02b1aa49-ae55-4f6b-b806-1048adf12b6a}</Project>
+      <Name>LI.Collaborate.Data.NH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LI.Collaborate.Mappings\LI.Collaborate.Mappings.csproj">
+      <Project>{7cfca244-cc5c-4145-92b0-2f685db7c38c}</Project>
+      <Name>LI.Collaborate.Mappings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LI.Collaborate.Models\LI.Collaborate.Models.csproj">
+      <Project>{6ef5749b-75ff-4472-abb2-e46f505c64ff}</Project>
+      <Name>LI.Collaborate.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
