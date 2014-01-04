@@ -40,13 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bonus.cs" />
+    <Compile Include="BonusEntry.cs" />
+    <Compile Include="Configuration.cs" />
     <Compile Include="Enum\EventRelationType.cs" />
+    <Compile Include="Enum\EventRepeatOption.cs" />
     <Compile Include="Enum\TeamMemberRole.cs" />
     <Compile Include="Event.cs" />
     <Compile Include="EventLink.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="R_TeamMember.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LI.Common.Utils\LI.Common.Utils.csproj">
+      <Project>{4747beea-21ad-41ae-99ed-2ef3e8feb079}</Project>
+      <Name>LI.Common.Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
