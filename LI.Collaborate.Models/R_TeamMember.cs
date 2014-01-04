@@ -5,25 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 using LI.Collaborate.Models.Enum;
-using LI.Common.Utils.Model;
 
 namespace LI.Collaborate.Models
 {
-    public class R_TeamMember : Entity
+    public class R_TeamMember
     {
-        #region Constructors
-
         /// <summary>
-        /// 实例化一个<see cref="LI.Collaborate.Models.R_TeamMember"/>对象
+        /// 获取或设置唯一标识事件与相关责任人的Id
         /// </summary>
-        public R_TeamMember()
-        {
-
-        }
-
-        #endregion
-
-        #region Properities
+        public String Id { get; set; }
 
         /// <summary>
         /// 获取或设置事件Id
@@ -50,24 +40,15 @@ namespace LI.Collaborate.Models
         /// </summary>
         public TeamMemberRole Role { get; set; }
 
-        #endregion
-
-        #region Members of LI.Common.Utils.Model.Entity
-
-        /// <summary>
-        /// 获取或设置唯一标识实体模型的Id
-        /// </summary>
-        public Guid Id { get; set; }
-
         /// <summary>
         /// 获取或设置事件创建人Id
         /// </summary>
-        public string CreatorId { get; set; }
+        public String CreatorId { get; set; }
 
         /// <summary>
         /// 获取或设置事件创建人姓名
         /// </summary>
-        public string CreatorName { get; set; }
+        public String CreatorName { get; set; }
 
         /// <summary>
         /// 获取或设置事件创建时间
@@ -77,18 +58,16 @@ namespace LI.Collaborate.Models
         /// <summary>
         /// 获取或设置事件最后修改人Id
         /// </summary>
-        public string ModifierId { get; set; }
+        public String ModifierId { get; set; }
 
         /// <summary>
         /// 获取或设置事件最后修改人姓名
         /// </summary>
-        public string ModifierName { get; set; }
+        public String ModifierName { get; set; }
 
         /// <summary>
         /// 获取或设置事件最后修改时间
         /// </summary>
         public DateTime ModifiedTime { get; set; }
-
-        #endregion
     }
 }
